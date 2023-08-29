@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="secondPage.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="drag-n-drop">
+            <div class="upload-file">
+                <div class="area">
+                    <h2>Drag & rop Audio file Here</h2>
+                    <input type="file" id="file-input" accept="audio/*">
+                    <div class="btn"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="audio-container">
+            <div class="notebook">
+                <div class="toolbar">
+                    <button class="bold"> <i class="fa-solid fa-b"></i></button>
+                    <button class="italic"> <i class="fa-solid fa-italic"></i></button>
+                    <button class="underline"> <i class="fa-solid fa-underline"></i></button>
+                    <select class="text-color"> </select>
+                    <select class="background=color"> </select>
+                    <button class="ol" value="ordered"> <i class="fa-solid fa-list-ol"></i></button>
+                    <button class="ul" value="bullet"> <i class="fa-solid fa-list-ul"></i></button>
+                    <button class=""></button>    
+                </div>
+                <div class="page" contenteditable="true">            
+                </div>
+                <div class="action-buttons">
+                        <div class="left-btn">
+                            <a href="#" class="btn-mic btn btn--primary-1">
+                                <span class="start-btn">Start</span>
+                            </a>
+                        </div>
+                        <div class="right-btn">
+                            <a data-tooltip="Copy text to Clipboard" href="#" class="btn btn--sm btn--primary btn-clipboard">
+                                <span class="copy-btn">Copy</span>
+                            </a>
+                            </a>
+                            <a data-tooltip="Save as PDF,Document,text" href="#" onclick="dictation('print');return false;" class="btn btn--sm btn-clear btn--primary">
+                                <span class="download-btn">Download</span>
+                            </a>
+                            <a data-tooltip="Clear Notepad" href="#" onclick="dictation('clear');return false;" class="btn btn--sm btn-clear btn--primary">
+                                <span class="clear-btn">Clear</span>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/46d90b4e3b.js" crossorigin="anonymous"></script>
+</body>
+</html>

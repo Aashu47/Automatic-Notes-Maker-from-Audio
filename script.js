@@ -1,10 +1,10 @@
 
 //login button
 function login() {
-    console.log('mene click kea')
+    window.location.href = 'login.html'
 }
 
 //start button
 function start() {
-    window.location.href = 'startPage.html';
+    window.location.href = 'secondPage.html';
 }
